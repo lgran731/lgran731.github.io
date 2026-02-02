@@ -963,7 +963,7 @@
                         </div>
                     </div>
                     <p class="platform-description">
-                        Built platform from raw biosignals to real-time ML inference, replacing unreliable commercial solutions. Migrated Python→C# for production deployment. Platform enabled 4 active research partnerships (CRADAs) and objective technology evaluation framework.
+                        Built platform from raw biosignals to real-time ML inference, replacing unreliable commercial solutions. Migrated Python→C# for production deployment. Platform enabled 4 active research partnerships with academic and industry organizations and objective technology evaluation framework.
                     </p>
                     <div class="tech-stack">
                         <span class="tech-tag">C#</span>
@@ -1134,7 +1134,7 @@
             <div class="recognition-item">
                 <div class="recognition-icon">🏆</div>
                 <h3>4 Performance-Based Bonuses</h3>
-                <p>Recognized for proposal authorship, advanced analysis development, company-wide Knowledge Is Power seminar presentation, and SIL platform deployment excellence within first 2 years at DCS.</p>
+                <p>Recognized for proposal authorship, advanced analysis development, technical presentations, and laboratory deployment excellence within first 2 years.</p>
             </div>
         </div>
     </section>
@@ -1167,7 +1167,7 @@
             <div class="modal-header">
                 <div class="modal-tag">0→1 Platform Build | Feb 2024 – July 2024</div>
                 <h2 class="modal-title">Real-Time Multi-Modal Analytics Platform</h2>
-                <p class="modal-subtitle">Launched systems integration laboratory in 4 months after two prior failed attempts, then validated entire lab capability through week-long Data Validation Pilot with 20 participants—first comprehensive end-to-end test proving COAT SIL was "all systems go" and establishing foundation for all future evaluation programs.</p>
+                <p class="modal-subtitle">Launched systems integration laboratory in 4 months after two prior failed attempts, then validated entire lab capability through week-long Data Validation Pilot with 20 participants—first comprehensive end-to-end test proving the laboratory was "all systems go" and establishing foundation for all future evaluation programs.</p>
             </div>
 
             <div class="modal-stats">
@@ -1189,7 +1189,7 @@
                 </div>
                 <div class="modal-stat">
                     <div class="modal-stat-value">20</div>
-                    <div class="modal-stat-label">Participants (DVP)</div>
+                    <div class="modal-stat-label">Validation Event Participants</div>
                 </div>
                 <div class="modal-stat">
                     <div class="modal-stat-value">&lt;30%</div>
@@ -1208,7 +1208,7 @@
                 <h3>My Role & Approach</h3>
                 <p>I was the single-threaded owner for the Data Validation Pilot—meaning if it went sideways, that was on me. I made the final go/no-go call to run the event, approved the datasets as ready for analysis, and presented results to leadership. If something failed its performance thresholds, I could block it from moving forward or send it back for rework.</p>
                 <p>The hardest part wasn't the technical work—it was coordination. Five internal teams, all with their own roadmaps: game development, software orchestration, data engineering, data analysis, human factors. Plus an external partner providing dashboard tooling. Getting everyone aligned on what "done" looked like took more time than building anything.</p>
-                <p>And then there was the GVSC situation. Three organizations—DCS, ARL, GVSC—had different opinions on how simulation data should flow through the system. DCS and ARL needed it parsed into separate streams. GVSC's architecture sent it as one big chunk. After weeks of back-and-forth across leadership and engineering teams, I got GVSC to change their approach. That unblocked the DVP and became the standard data model all three organizations use now.</p>
+                <p>And then there was the GVSC situation. Three organizations—DCS (my company), Army Research Laboratories (ARL), and Ground Vehicle Systems Center (GVSC)—had different opinions on how simulation data should flow through the system. DCS and ARL needed it parsed into separate streams. GVSC's architecture sent it as one big chunk. After weeks of back-and-forth across leadership and engineering teams, I got GVSC to change their approach. That unblocked the Data Validation Pilot and became the standard data model all three organizations use now.</p>
                 <p>On the technical side, I defined what "good enough" meant: millisecond latency for physiological data (seconds would break our correlation analysis), perfect synchronization across all data streams (if physio data didn't line up with simulation events, the dashboard was useless), and less than 30% data loss (measured by comparing actual vs expected row counts). Those weren't arbitrary—they were the thresholds where the system stopped being useful.</p>
                 <p>I also spent a lot of time thinking about what could go wrong. Top three risks: simulation software crashing mid-event, data pipelines failing to log correctly, or time synchronization breaking across streams. Any of those would've invalidated the results. So we tested aggressively in two-week sprints and monitored everything live during the actual event.</p>
                 <p>During the week itself, I ran command and control—managing seven concurrent data pipelines across about 40 Kafka topics, watching for issues in real time, and making calls on the fly when things didn't go as planned.</p>
@@ -1219,7 +1219,7 @@
                 <div class="modal-highlights">
                     <div class="highlight-box">
                         <h4>Multi-Modal Data Integration</h4>
-                        <p>Integrated Unreal Engine 5 simulation data (vehicle position/speed, obstacle hits, dynamics, OPFOR drone trajectories) with physiological monitoring (cardiac metrics), eye-tracking, and user interface events (yoke button responses) into unified Kafka architecture. Enabled cohesive performance analysis across mobility, threat detection, and threat response metrics.</p>
+                        <p>Integrated Unreal Engine 5 simulation data (vehicle position/speed, obstacle hits, dynamics, threat drone trajectories) with physiological monitoring (cardiac metrics), eye-tracking, and user interface events (yoke button responses) into unified Kafka architecture. Enabled cohesive performance analysis across mobility, threat detection, and threat response metrics.</p>
                     </div>
                     <div class="highlight-box">
                         <h4>Common Data Model Across 3 Orgs</h4>
@@ -1235,17 +1235,17 @@
             <div class="modal-section">
                 <h3>Results & Impact</h3>
                 <ul>
-                    <li>Successfully launched laboratory in February 2024 after two prior failed attempts (4-month delivery from project start), but launch was just the beginning—lab capability remained unproven until DVP</li>
+                    <li>Successfully launched laboratory in February 2024 after two prior failed attempts (4-month delivery from project start), but launch was just the beginning—lab capability remained unproven until validation event</li>
                     <li>Executed week-long Data Validation Pilot (July 2024) as first comprehensive end-to-end test of entire laboratory: Made final go/no-go call, ran live day-of execution coordinating newly-formed cross-functional team (data science, research, simulation, software engineering working together for first time), approved all datasets as analysis-ready</li>
-                    <li>DVP success officially put COAT SIL "on the map" as fully-functional laboratory: Demonstrated real-time multi-modal analytics (physiological monitoring, Unreal Engine 5 simulation, eye-tracking, UI events) working in concert with millisecond-latency synchronization—proving lab was truly "all systems go"</li>
-                    <li>Authored comprehensive 44-page COAT SIL overview post-DVP: Documented mission statement, accomplished capabilities, complete software and data architecture, Unreal Engine plugins, and program structure—providing definitive snapshot of where program stood and establishing technical foundation for all future work</li>
-                    <li>Solidified new program structure across functional areas: DVP execution week brought together personnel from data science, research, simulation, and software engineering as cohesive team for first time, establishing collaborative model still used today</li>
-                    <li>Platform supported first formal technology evaluation event (Dec 2024): "We were officially in business"—COAT SIL transitioned from experimental lab to operational evaluation facility</li>
-                    <li>Platform enabled 3 total evaluation events post-DVP (EET1, large-scale external event, DVP2.0), supporting ~60 users; 4 teams now use platform for daily work (game dev, ML/analysis, data eng, human factors)</li>
+                    <li>Validation event success officially put the laboratory "on the map" as fully-functional: Demonstrated real-time multi-modal analytics (physiological monitoring, Unreal Engine 5 simulation, eye-tracking, UI events) working in concert with millisecond-latency synchronization—proving lab was truly "all systems go"</li>
+                    <li>Authored comprehensive 44-page laboratory overview post-validation: Documented mission statement, accomplished capabilities, complete software and data architecture, Unreal Engine plugins, and program structure—providing definitive snapshot of where program stood and establishing technical foundation for all future work</li>
+                    <li>Solidified new program structure across functional areas: Validation event execution week brought together personnel from data science, research, simulation, and software engineering as cohesive team for first time, establishing collaborative model still used today</li>
+                    <li>Platform supported first formal technology evaluation event (Dec 2024): "We were officially in business"—laboratory transitioned from experimental to operational evaluation facility</li>
+                    <li>Platform enabled 3 total evaluation events post-validation (EET1, large-scale external event, follow-on validation), supporting ~60 users; 4 teams now use platform for daily work (game dev, ML/analysis, data eng, human factors)</li>
                     <li>Trained 2 engineers in advanced analytics capabilities: One data scientist (3-month intensive with daily meetings, now independent contributor making significant contributions) and one engineer in signal processing & data pipeline development</li>
                     <li>Resolved critical 3-org architectural conflict: After weeks of negotiation, convinced GVSC to modify Kafka architecture to parse simulation data into separate topics, establishing common data model now mandated across DCS, ARL, and GVSC</li>
-                    <li>Primary technical author on winning $70.7M GVSL contract (written January 2024 during SIL launch sprint): Advanced analytics components represented ~25% of proposal value (~$18M), earning equity incentive from CEO for technical vision that distinguished winning proposal</li>
-                    <li>Recognized for delivery impact: Promoted from Systems Engineer to Technical Program Manager (Feb 2024) after successfully launching laboratory that had failed twice, then proving capability through DVP validation</li>
+                    <li>Primary technical author on winning $70.7M government contract (written January 2024 during laboratory launch): Advanced analytics components represented ~25% of proposal value (~$18M), earning equity incentive from CEO for technical vision that distinguished winning proposal</li>
+                    <li>Recognized for delivery impact: Promoted from Systems Engineer to Technical Program Manager (Feb 2024) after successfully launching laboratory that had failed twice, then proving capability through comprehensive validation event</li>
                 </ul>
             </div>
 
@@ -1304,22 +1304,18 @@
 
             <div class="modal-section">
                 <h3>The Challenge</h3>
-                <p>The program received an initial computer vision prototype from Army Research Laboratories, but it was unusable—outdated model, unmaintained code, zero documentation. The team needed to build from ground up: a production-ready ML inference platform supporting 18 concurrent camera streams with 30-40 FPS processing, sub-70ms latency, and 75%+ detection accuracy across 13 target classes. The platform needed to scale from 3 streams (early prototype) to 18 streams while serving as foundation for third-party model evaluations.</p>
-                <p>Midway through development, a critical scope reset: After 6 months of RGB-focused development, the customer revealed Infrared (IR) capability was actually essential ("Soldiers will reach for that immediately"). With 2 months until major evaluation event, the team had to pivot architecture to support both RGB and IR streams while simultaneously fixing the ML model's target ranking system for real-world applications. This was a hard lesson in proactive customer communication.</p>
+                <p>We got a computer vision prototype from Army Research Laboratories. It was... not great. Outdated model, unmaintained code, documentation that didn't exist. We could've tried to salvage it, but honestly, it would've taken longer than starting fresh. So that's what we did: built a real-time ML inference platform from scratch that could handle 18 concurrent camera streams at 30-40 FPS, keep latency under 70ms, and hit 75%+ accuracy across 13 different target types.</p>
+                <p>Here's where it got interesting. Six months in, we're deep in development—RGB cameras, everything optimized for that—and the customer mentions, almost in passing, "Oh, and we'll need IR capability too. Soldiers will definitely use that." IR. Infrared. Completely different data stream. Two months until our major evaluation event.</p>
+                <p>That one hurt. Not because it was technically impossible—we could do it—but because it shouldn't have been a surprise. I should've asked better questions earlier. We scrambled, delivered RGB + IR in that two-month window, but it taught me something I haven't forgotten: proactive customer communication isn't optional. Check in constantly. Surface assumptions. Don't wait for them to remember the critical requirement they forgot to mention.</p>
             </div>
 
             <div class="modal-section">
                 <h3>My Role & Approach</h3>
-                <p>I served as program owner with final decision authority over architecture (Python→C++ migration, client-server design) and explicit accountability for delivery outcomes (schedule, performance readiness). After securing project charter and cross-functional team approval, I owned the platform from model selection through MVP delivery and continue to own roadmap, scaling, and third-party integration strategy.</p>
-                <p>Key responsibilities and decisions included:</p>
-                <ul>
-                    <li>Defining hard go/no-go performance gates: 30-40 FPS, 50-70ms latency ceiling, 75%+ accuracy (high false detection rates led to user frustration—early versions constantly detected tree branches and shadows as drones, making system unusable)</li>
-                    <li>Leading model selection: Evaluated YOLO small/medium/large variants, selected medium for optimal latency/accuracy tradeoff. Rejected ARL prototype and built from scratch</li>
-                    <li>Making final call on Python→C++ migration to meet real-time requirements, then driving client-server refactor to distribute GPU load across dual RTX 4090 systems via 100 Gigabit Ethernet</li>
-                    <li>Approving FP32→FP16 optimization that reduced memory footprint and bandwidth without compromising accuracy</li>
-                    <li>Navigating mid-project scope crisis: Resetting expectations with program leadership after discovering IR requirement 6 months into development, then delivering both RGB + IR support in 2-month sprint</li>
-                    <li>Managing primary stakeholders (DCS/government leadership, external industry partners) and establishing platform as dependency for all software integration efforts</li>
-                </ul>
+                <p>I owned this platform end-to-end—model selection, architecture decisions, delivery schedule, the works. If we missed performance targets or the timeline slipped, that was on me. After getting the project charter approved and assembling the cross-functional team, I ran it from initial prototype through production MVP. Still own the roadmap today.</p>
+                <p>First decision: what actually constitutes "good enough" for this system? I defined hard gates: 30-40 FPS processing, sub-70ms latency, 75%+ accuracy. Those weren't arbitrary. Early versions were detecting tree branches and shadows as drones constantly, which made soldiers want to turn the system off. If the false positive rate is high enough that users don't trust it, the accuracy number doesn't matter—it's unusable.</p>
+                <p>We evaluated YOLO model variants (small, medium, large) and picked medium. Best balance between speed and accuracy for what we needed. The Army Research Laboratories prototype? Rejected it. Would've taken longer to fix than building from scratch.</p>
+                <p>Big architecture call: migrate from Python to C++. Python wasn't going to cut it for real-time performance. Then we hit GPU bottlenecks, so I pushed for a client-server refactor—split frame extraction from inference, distribute the load across dual RTX 4090 systems over 100 Gigabit Ethernet. That got us from 3 streams to 18 with about 2× the throughput.</p>
+                <p>The IR situation was a learning moment. Six months in, customer drops "we need infrared support too" with two months to delivery. I reset expectations with leadership—this is happening, but here's what it costs—then we sprinted. Got both RGB and IR working in that window. But the lesson stuck: I now implement continuous stakeholder alignment checkpoints. Don't wait for requirements to surface late. Go find them.</p>
             </div>
 
             <div class="modal-section">
@@ -1405,22 +1401,19 @@
 
             <div class="modal-section">
                 <h3>The Challenge</h3>
-                <p>The program needed a mission-critical voice AI assistant to serve as the central hub of a system-of-systems (SoS) architecture for military vehicles. This wasn't a prototype—it required 99.99% uptime in safety-critical environments with formal SLAs defined by government customers. The platform needed to support hands-free operation across 4 concurrent radio channels while progressing through a 6-phase roadmap from basic transcription to full multi-agentic AI assistant capabilities.</p>
-                <p>The technical challenge was achieving <300ms command latency (anything over 500ms felt "unnatural" and degraded user trust) and 75%+ accuracy for military speech across 4 concurrent audio streams. Additionally, I needed to navigate a complex vendor relationship with Army Research Laboratories (ARL) and a private industry partner who ultimately delivered a solution that didn't align with system requirements—risking 6 months of development work and platform integrity.</p>
+                <p>Build a voice AI assistant for military vehicles that soldiers would actually trust. Not a demo, not a prototype—a production system with 99.99% uptime requirements and formal SLAs, because when you're operating hands-free across four concurrent radio channels in a safety-critical environment, "mostly working" isn't good enough.</p>
+                <p>The technical bar was high: sub-300ms command latency (anything over 500ms feels sluggish and breaks user trust), 75%+ accuracy for military-specific speech, handling four audio streams simultaneously. But honestly? The harder part was navigating a vendor relationship that went sideways.</p>
+                <p>We partnered with an industry contractor through Army Research Laboratories. Six months in, they delivered something we didn't ask for—a complete model plus architecture instead of just model integration, which is what we'd agreed on. Integrating their approach would've taken more time and introduced more risk than starting over. I had to make the call: walk away from six months of work with this partner. It wasn't easy. But here's what I learned: advanced technology doesn't kill projects. Poor communication has a 100% failure rate.</p>
             </div>
 
             <div class="modal-section">
                 <h3>My Role & Approach</h3>
-                <p>I served as single-threaded owner with full decision authority over roadmap sequencing, scope changes, and phase progression (transcription → command → assistant). I owned the platform from inception through user acceptance testing (currently Phase 5 of 6), with final accountability for on-time, on-budget delivery in a safety-critical environment where failure would put the entire program at high risk.</p>
-                <p>Key responsibilities and decisions included:</p>
-                <ul>
-                    <li>Defining acceptance criteria and evaluation framework: 75%+ accuracy (Word Error Rate for transcription + command execution accuracy), <300ms latency, 99.99% uptime SLA</li>
-                    <li>Establishing 6-phase delivery roadmap with formal milestones for org leadership and 2-week agile sprints for development</li>
-                    <li>Architecting modular open system architecture (MOSA) enabling model swapping and serving as platform service for dependent systems</li>
-                    <li>Resolving 6-month vendor conflict with ARL and private industry partner: After partner delivered model + architecture instead of agreed-upon model integration, I made the call to terminate the contract despite 6 months of invested development time. The integration LOE and risks outweighed potential benefits, and poor communication killed what could have been advanced technology.</li>
-                    <li>Blocking deployment authority: If quality thresholds weren't met, I could halt progression between phases and require architecture rework</li>
-                    <li>Validating platform with 21 users across week-long operational testing (3-hour sessions, 4 concurrent radio channels)</li>
-                </ul>
+                <p>I owned this platform from concept through user acceptance testing—currently in Phase 5 of a 6-phase roadmap. Final call on roadmap sequencing, scope changes, whether we move from one phase to the next. If quality thresholds weren't met, I could block deployment and send it back for rework. If we blew the schedule or budget in a safety-critical system, that's on me.</p>
+                <p>First thing I did: define what "good enough" actually means. Acceptance criteria: 75%+ accuracy (measured by word error rate and command execution), sub-300ms latency, 99.99% uptime. Those became the gates between phases. You don't move forward unless you hit them.</p>
+                <p>I set up a 6-phase roadmap—transcription, then command execution, then full AI assistant—with formal milestones for leadership and 2-week sprints underneath for the team. Built the architecture to be modular so we could swap models in and out as better ones became available. This thing needed to be a platform service that other systems depend on, not a standalone tool.</p>
+                <p>Then came the vendor decision. Six months into a partnership with an industry contractor, they delivered something that didn't match what we'd agreed on. We'd asked for model integration—just plug their model into our architecture. They gave us model + architecture. Integrating it would've taken longer than rebuilding from scratch and introduced risks we didn't want. I recommended terminating the contract. Leadership agreed, despite the sunk time and despite pressure from Army Research Laboratories to make it work.</p>
+                <p>That one taught me something: you can have great technology and still fail if communication breaks down. Now I frontload alignment conversations. Define deliverables in detail. Check in constantly. Surface mismatches early, not six months in.</p>
+                <p>We validated the platform with 21 users over a week—3-hour sessions, 4 concurrent radio channels, real operational conditions. It worked. Currently the platform is on a funded roadmap, mandated for reuse, and serving as the reference architecture for next-generation capabilities.</p>
             </div>
 
             <div class="modal-section">
