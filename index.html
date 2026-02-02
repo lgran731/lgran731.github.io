@@ -667,6 +667,50 @@
             line-height: 1.6;
         }
 
+        /* Recognition Section */
+        #recognition {
+            padding: 6rem 2rem;
+            background: var(--color-bg);
+        }
+
+        .recognition-grid {
+            max-width: 1400px;
+            margin: 3rem auto 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .recognition-item {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .recognition-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-primary);
+        }
+
+        .recognition-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .recognition-item h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .recognition-item p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--color-text-dim);
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             nav ul {
@@ -730,6 +774,7 @@
                 <li><a href="#platforms">Platforms</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#recognition">Recognition</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -739,9 +784,9 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-label">Technical Program Manager</div>
+                <div class="hero-label">Technical Program Manager • Detroit, MI • Open to Remote/Relocation</div>
                 <h1>Building ML Platforms That Scale</h1>
-                <p>Technical Program Manager with 3+ years leading complex, high-risk technical programs and 7+ years managing cross-functional initiatives. Known for operating in ambiguity, recovering failed initiatives, and aligning engineering, research, and operations teams around measurable delivery gates in regulated, high-reliability systems.</p>
+                <p>Technical Program Manager who launched a systems integration laboratory in 4 months after two prior failed attempts, then built 4 production ML/analytics platforms on that foundation—all within 2 years. Known for recovering failed initiatives, making hard vendor termination decisions, and aligning engineering, research, and operations teams around measurable delivery gates in regulated, high-reliability systems.</p>
                 
                 <div class="hero-stats">
                     <div class="stat">
@@ -749,12 +794,12 @@
                         <div class="stat-label">Production Platforms Built</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">$4M</div>
-                        <div class="stat-label">Combined Budget Managed</div>
+                        <div class="stat-number">~$18M</div>
+                        <div class="stat-label">Contract Influence (GVSL)</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number">2</div>
-                        <div class="stat-label">Years to Build All 4</div>
+                        <div class="stat-label">Years (All 4 Platforms)</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number">30%</div>
@@ -943,7 +988,9 @@
             <div class="about-text">
                 <p>I specialize in end-to-end delivery of ML and analytics platforms from 0→1, translating research prototypes into production systems that scale. My background spans defense technology programs, medical device development, and applied research in cognitive neuroscience.</p>
                 
-                <p>Over the past 2 years as a Technical Program Manager at DCS Corporation, I've owned delivery of 4 production platforms supporting real-time ML inference, each with $1M+ budgets and cross-functional teams of 10-14 engineers. These platforms now enable downstream teams and serve as mandated architecture standards across 3 organizations.</p>
+                <p>As a Technical Program Manager at DCS Corporation, I've owned delivery of 4 production platforms supporting real-time ML inference, each with $1M+ budgets and cross-functional teams of 10-14 engineers. These platforms now enable downstream teams and serve as mandated architecture standards across 3 organizations. Despite operating in a regulated defense environment, I delivered all 4 platforms in 2 years—demonstrating startup speed with enterprise quality in safety-critical systems.</p>
+                
+                <p>Promoted to Technical Program Manager in February 2024 after 11 months as Systems Engineer—a recognition of both execution excellence (successfully launching a laboratory that had failed twice) and strategic technical vision (primary authorship on ~$18M advanced analytics subfactor of winning $70.7M GVSL contract). This combination of delivery capability and technical leadership earned CEO recognition through an equity incentive award—one of few individual RSU grants company-wide.</p>
                 
                 <p>What sets me apart is the combination of deep technical expertise (I can code in Python, C++, C#, JavaScript) with program management discipline. PMP and CSM certified with a PhD in Cognitive Neuroscience from the University of Michigan, I understand both the technical constraints of real-time systems and the organizational dynamics of aligning stakeholders across competing priorities.</p>
 
@@ -953,7 +1000,7 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-year">Feb 2024 – Present</div>
-                    <div class="timeline-role">Technical Program Manager (Lead)</div>
+                    <div class="timeline-role">Technical Program Manager</div>
                     <div class="timeline-company">DCS Corporation</div>
                 </div>
                 <div class="timeline-item">
@@ -1047,12 +1094,15 @@
                 <h3>Education</h3>
                 <div class="skill-list">
                     <span class="skill-item">PhD, Cognitive Neuroscience — University of Michigan, 2021</span>
+                    <span class="skill-item">MS, Cognitive Neuroscience — University of Michigan, 2017</span>
+                    <span class="skill-item">BS, Psychology — University of Louisville, 2015</span>
                 </div>
             </div>
 
             <div class="skill-category">
                 <h3>Certifications</h3>
                 <div class="skill-list">
+                    <span class="skill-item">Secret Security Clearance (Active)</span>
                     <span class="skill-item">PMP (PMI, Jan 2026)</span>
                     <span class="skill-item">CSM (Scrum Alliance, Nov 2025)</span>
                     <span class="skill-item">AWS Solutions Architect — In Progress (Expected May 2026)</span>
@@ -1061,15 +1111,44 @@
         </div>
     </section>
 
+    <!-- Recognition Section -->
+    <section id="recognition">
+        <div class="section-header">
+            <div class="section-label">Recognition</div>
+            <h2 class="section-title">Awards & Business Impact</h2>
+        </div>
+        
+        <div class="recognition-grid">
+            <div class="recognition-item">
+                <div class="recognition-icon">💰</div>
+                <h3>CEO Recognition: Equity Incentive Award</h3>
+                <p>Granted Restricted Stock Units with 5-year vesting for primary technical authorship on advanced analytics subfactor (~$18M value, 25% of total) of winning $70.7M GVSL contract. Technical vision distinguished the winning proposal and caught CEO attention as one of few individual equity recognitions company-wide.</p>
+            </div>
+            
+            <div class="recognition-item">
+                <div class="recognition-icon">🚀</div>
+                <h3>Rapid Promotion (11 Months)</h3>
+                <p>Promoted from Systems Engineer to Technical Program Manager (Feb 2024) after successfully launching laboratory that had failed twice previously, demonstrating both execution excellence and strategic technical vision.</p>
+            </div>
+            
+            <div class="recognition-item">
+                <div class="recognition-icon">🏆</div>
+                <h3>4 Performance-Based Bonuses</h3>
+                <p>Recognized for proposal authorship, advanced analysis development, company-wide Knowledge Is Power seminar presentation, and SIL platform deployment excellence within first 2 years at DCS.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="contact-content">
             <h2>Let's Build Something</h2>
-            <p>Interested in discussing 0→1 platform opportunities, ML productization challenges, or cross-organizational program leadership? Let's connect.</p>
+            <p>I'm exploring Senior/Staff Technical Program Manager opportunities where I can apply my 0→1 platform delivery expertise at larger scale in commercial environments. With a track record of delivering 4 production platforms ($4M combined budget), influencing $18M in contract value through technical vision, and leading cross-organizational partnerships, I specialize in translating ambiguous requirements into scalable ML/analytics platforms that become organizational standards.</p>
+            <p>Open to remote work and relocation. Strong fit for companies building production ML infrastructure, real-time systems, or mission-critical platforms.</p>
             
             <div class="contact-links">
                 <a href="mailto:lgran731@gmail.com" class="contact-btn">Email Me</a>
-                <a href="https://linkedin.com/in/lgrant-phd" target="_blank" class="contact-btn secondary">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/lgrant-phd" target="_blank" class="contact-btn secondary">LinkedIn</a>
                 <a href="Lauren_Grant_Resume.pdf" download class="contact-btn secondary">Download Resume</a>
             </div>
         </div>
@@ -1077,7 +1156,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Lauren Grant | Technical Program Manager | Detroit, MI</p>
+        <p>© 2025 Lauren Grant | Technical Program Manager | Detroit, MI | Open to Remote/Relocation</p>
     </footer>
 
     <!-- Modals for Platform Details -->
@@ -1088,7 +1167,7 @@
             <div class="modal-header">
                 <div class="modal-tag">0→1 Platform Build | Feb 2024 – July 2024</div>
                 <h2 class="modal-title">Real-Time Multi-Modal Analytics Platform</h2>
-                <p class="modal-subtitle">Built Kafka-based infrastructure from concept to production, enabling live performance monitoring and establishing reusable architecture mandated across 3 organizations.</p>
+                <p class="modal-subtitle">Launched systems integration laboratory in 4 months after two prior failed attempts, then validated entire lab capability through week-long Data Validation Pilot with 20 participants—first comprehensive end-to-end test proving COAT SIL was "all systems go" and establishing foundation for all future evaluation programs.</p>
             </div>
 
             <div class="modal-stats">
@@ -1101,38 +1180,40 @@
                     <div class="modal-stat-label">Kafka Topics</div>
                 </div>
                 <div class="modal-stat">
-                    <div class="modal-stat-value">4</div>
-                    <div class="modal-stat-label">Evaluation Events Enabled</div>
+                    <div class="modal-stat-value">6</div>
+                    <div class="modal-stat-label">Stakeholder Groups</div>
                 </div>
                 <div class="modal-stat">
                     <div class="modal-stat-value">3</div>
-                    <div class="modal-stat-label">Organizations Aligned</div>
+                    <div class="modal-stat-label">Orgs Aligned</div>
                 </div>
                 <div class="modal-stat">
                     <div class="modal-stat-value">20</div>
                     <div class="modal-stat-label">Participants (DVP)</div>
                 </div>
                 <div class="modal-stat">
-                    <div class="modal-stat-value">ms</div>
-                    <div class="modal-stat-label">Latency Requirement</div>
+                    <div class="modal-stat-value">&lt;30%</div>
+                    <div class="modal-stat-label">Max Data Loss</div>
                 </div>
             </div>
 
             <div class="modal-section">
                 <h3>The Challenge</h3>
-                <p>The program had previously attempted to build a systems integration laboratory twice and failed both times. I joined in October 2023 with a mandate to succeed where others had failed. The challenge was to create a production-ready real-time analytics platform supporting multi-modal data streams (physiological, eye-tracking, simulation, survey data) with millisecond-level latency requirements for live performance monitoring.</p>
-                <p>Additionally, three separate organizations (DCS, Army Research Laboratories, and government partners) had conflicting approaches to data architecture. Without alignment, the platform couldn't deploy. The laboratory needed to open in February 2024—just 4 months away.</p>
+                <p>The program had failed twice to build a systems integration laboratory before I joined in October 2023. I had 4 months to succeed where others had failed—the laboratory HAD to open in February 2024 or the entire evaluation program would remain blocked. But "opening" wasn't enough. As the COAT SIL launched in February 2024, active architecture was still underway: multiple data lines being installed, vehicle simulation cab being assembled, and critically—no comprehensive testing had been done to verify the lab was truly "all systems go."</p>
+                <p>The Data Validation Pilot (DVP) was created to solve this. The COAT SIL had just been stood up, and the DVP would provide the first true end-to-end test of the entire laboratory capability as a whole: real-time workload evaluation, Unreal Engine 5 simulation environment, game performance metrics, multi-modal data streaming, live analytics—everything from start to finish had to work. If we succeeded, the COAT SIL would officially be on the map as a fully-functional laboratory. If we failed, the program would need to restart. Additionally, this event would solidify the new program structure across functional areas—personnel from data science, research, simulation, and software engineering were coming together as a team for the first time.</p>
             </div>
 
             <div class="modal-section">
                 <h3>My Role & Approach</h3>
-                <p>I served as single-threaded owner with end-to-end accountability for scope, execution, and outcomes. I defined success criteria, performance targets, and evaluation requirements, translating high-level objectives into a structured execution roadmap.</p>
-                <p>Key responsibilities included:</p>
+                <p>I served as single-threaded owner and program owner for the Data Validation Pilot (DVP) with full accountability for platform delivery, event execution, and outcomes. I made the final go/no-go call to run the week-long DVP event with 20 participants, approved all datasets as analysis-ready, presented results to leadership, and had authority to block technologies from advancing if they failed thresholds or require rework before re-evaluation.</p>
+                <p>Key responsibilities and decisions included:</p>
                 <ul>
-                    <li>Defining platform performance thresholds: millisecond-level latency for physiological data, strict cross-pipeline synchronization, quantified data-loss tolerances</li>
-                    <li>Coordinating 6 engineering teams across internal organizations with independent roadmaps (simulation, orchestration, data engineering, analytics, research)</li>
-                    <li>Resolving critical 3-org architectural conflict blocking deployment through direct negotiation and technical alignment</li>
-                    <li>Making final go/no-go decision for Data Validation Pilot and approving all datasets as analysis-ready</li>
+                    <li>Coordinating 5 internal teams with independent roadmaps (Unreal Engine 5 game dev, software orchestration/Ansible, data engineering, data analysis, human factors/research) plus external tool provider (ARL dashboard integration)</li>
+                    <li>Resolving GVSC data architecture conflict: After weeks of negotiation across DCS/ARL/GVSC leadership and engineering teams, convinced GVSC to modify their Kafka architecture to parse simulation data into separate topics. This unblocked DVP deployment and established common data model now mandated across all 3 organizations</li>
+                    <li>Defining explicit performance gates documented in 2-week sprint testing: millisecond-level latency for physiological data (seconds would cause dashboard to lag behind critical simulation events, breaking correlation analysis), cross-pipeline synchronization accuracy (performance metrics + physio data + Unreal Engine 5 events had to sync perfectly or dashboard was useless), <30% data loss rate (measured by actual vs expected row counts)</li>
+                    <li>Mitigating top 3 pre-DVP risks that would invalidate results: (1) Orchestration/simulation/UI technical failures rendering results uninterpretable, (2) Data pipelines not logging correctly or major signal dropouts creating unactionable data, (3) Time sync failure across pipelines preventing correlation of evaluation events with data metrics</li>
+                    <li>Integrating ARL's mission planning dashboard (used for after-action review at ARL): Collaborated with GVSC to develop Kafka multi-topic plugin that translated Unreal Engine output into dashboard-ingestible format, enabling real-time event logging and playback</li>
+                    <li>Running live execution: Day-of command & control for week-long DVP event, directly managing 7 concurrent pipelines across ~40 Kafka topics</li>
                 </ul>
             </div>
 
@@ -1140,16 +1221,16 @@
                 <h3>Technical Solution</h3>
                 <div class="modal-highlights">
                     <div class="highlight-box">
-                        <h4>Kafka Architecture</h4>
-                        <p>Designed and implemented Apache Kafka-based data infrastructure with 7 concurrent pipelines processing ~40 topics, supporting real-time streaming analytics and synchronized multimodal data.</p>
+                        <h4>Multi-Modal Data Integration</h4>
+                        <p>Integrated Unreal Engine 5 simulation data (vehicle position/speed, obstacle hits, dynamics, OPFOR drone trajectories) with physiological monitoring (cardiac metrics), eye-tracking, and user interface events (yoke button responses) into unified Kafka architecture. Enabled cohesive performance analysis across mobility, threat detection, and threat response metrics.</p>
                     </div>
                     <div class="highlight-box">
-                        <h4>Performance Gates</h4>
-                        <p>Established explicit thresholds: millisecond latency for physiological data, cross-pipeline synchronization accuracy, acceptable data-loss rates (<30%). All metrics documented and enforced.</p>
+                        <h4>Common Data Model Across 3 Orgs</h4>
+                        <p>Negotiated GVSC architectural change from single-stream to multi-topic Kafka parsing, establishing common data model mandated across DCS, ARL, and GVSC. Developed custom plugin to translate Unreal output for ARL dashboard integration, sparking wider cross-org conversation on unified data standards.</p>
                     </div>
                     <div class="highlight-box">
-                        <h4>Common Data Model</h4>
-                        <p>Negotiated and delivered unified data architecture across DCS, ARL, and government partners. Now mandated as reusable standard for all future programs.</p>
+                        <h4>Real-Time Performance Monitoring</h4>
+                        <p>Built live dashboard with millisecond-latency physiological data, synchronized performance metrics, and real-time event logging. Integrated ARL's mission planning tool for map-based vehicle/threat visualization with timeline playback, enabling both live monitoring and after-action review.</p>
                     </div>
                 </div>
             </div>
@@ -1157,26 +1238,30 @@
             <div class="modal-section">
                 <h3>Results & Impact</h3>
                 <ul>
-                    <li>Successfully launched laboratory in February 2024 after two prior failed attempts, establishing it as the foundation for all evaluation programs</li>
-                    <li>Validated platform under operational conditions with 20 participants during week-long Data Validation Pilot (July 2024)</li>
-                    <li>Demonstrated real-time analytics and visualization capabilities enabling live performance monitoring (previously impossible)</li>
-                    <li>Platform now supports 4 teams executing all evaluation programs, enabling 4 major evaluation events since deployment</li>
-                    <li>Data architecture mandated as reusable standard across 3 organizations (DCS, ARL, GVSC), with all platform components remaining in active use</li>
-                    <li>Enabled first ML-assisted performance benchmarking, establishing foundation for advanced analytics capabilities</li>
-                    <li>Recognized for delivery impact through promotion from Systems Engineer to Technical Program Manager (Feb 2024) and equity incentive following primary technical authorship of advanced analytics components for winning $70.7M Army simulation contract (GVSL)</li>
+                    <li>Successfully launched laboratory in February 2024 after two prior failed attempts (4-month delivery from project start), but launch was just the beginning—lab capability remained unproven until DVP</li>
+                    <li>Executed week-long Data Validation Pilot (July 2024) as first comprehensive end-to-end test of entire laboratory: Made final go/no-go call, ran live day-of execution coordinating newly-formed cross-functional team (data science, research, simulation, software engineering working together for first time), approved all datasets as analysis-ready</li>
+                    <li>DVP success officially put COAT SIL "on the map" as fully-functional laboratory: Demonstrated real-time multi-modal analytics (physiological monitoring, Unreal Engine 5 simulation, eye-tracking, UI events) working in concert with millisecond-latency synchronization—proving lab was truly "all systems go"</li>
+                    <li>Authored comprehensive 44-page COAT SIL overview post-DVP: Documented mission statement, accomplished capabilities, complete software and data architecture, Unreal Engine plugins, and program structure—providing definitive snapshot of where program stood and establishing technical foundation for all future work</li>
+                    <li>Solidified new program structure across functional areas: DVP execution week brought together personnel from data science, research, simulation, and software engineering as cohesive team for first time, establishing collaborative model still used today</li>
+                    <li>Platform supported first formal technology evaluation event (Dec 2024): "We were officially in business"—COAT SIL transitioned from experimental lab to operational evaluation facility</li>
+                    <li>Platform enabled 3 total evaluation events post-DVP (EET1, large-scale external event, DVP2.0), supporting ~60 users; 4 teams now use platform for daily work (game dev, ML/analysis, data eng, human factors)</li>
+                    <li>Trained 2 engineers in advanced analytics: Sumit Shrestha (3-month intensive with daily meetings, now independent data scientist) and Mikolaj Pal (signal processing & data pipelines)</li>
+                    <li>Resolved critical 3-org architectural conflict: After weeks of negotiation, convinced GVSC to modify Kafka architecture to parse simulation data into separate topics, establishing common data model now mandated across DCS, ARL, and GVSC</li>
+                    <li>Primary technical author on winning $70.7M GVSL contract (written January 2024 during SIL launch sprint): Advanced analytics components represented ~25% of proposal value (~$18M), earning equity incentive from CEO for technical vision that distinguished winning proposal</li>
+                    <li>Recognized for delivery impact: Promoted from Systems Engineer to Technical Program Manager (Feb 2024) after successfully launching laboratory that had failed twice, then proving capability through DVP validation</li>
                 </ul>
             </div>
 
             <div class="modal-section">
                 <h3>Tech Stack</h3>
                 <div class="tech-stack">
-                    <span class="tech-tag">Apache Kafka</span>
+                    <span class="tech-tag">Apache Kafka (~40 Topics)</span>
+                    <span class="tech-tag">Unreal Engine 5</span>
                     <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Real-Time Processing</span>
-                    <span class="tech-tag">Data Architecture</span>
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">ETL Pipelines</span>
-                    <span class="tech-tag">Multi-Modal Data</span>
+                    <span class="tech-tag">Ansible (Orchestration)</span>
+                    <span class="tech-tag">Real-Time Dashboards</span>
+                    <span class="tech-tag">Multi-Modal Data Sync</span>
                     <span class="tech-tag">Distributed Systems</span>
                 </div>
             </div>
@@ -1196,41 +1281,47 @@
             <div class="modal-stats">
                 <div class="modal-stat">
                     <div class="modal-stat-value">18</div>
-                    <div class="modal-stat-label">Camera Streams</div>
+                    <div class="modal-stat-label">Camera Streams (6× Scale)</div>
                 </div>
                 <div class="modal-stat">
-                    <div class="modal-stat-value">40 FPS</div>
+                    <div class="modal-stat-value">30-40 FPS</div>
                     <div class="modal-stat-label">Processing Speed</div>
                 </div>
                 <div class="modal-stat">
                     <div class="modal-stat-value">75%</div>
-                    <div class="modal-stat-label">Detection Accuracy</div>
+                    <div class="modal-stat-label">Video Detection Accuracy</div>
                 </div>
                 <div class="modal-stat">
                     <div class="modal-stat-value">2×</div>
                     <div class="modal-stat-label">Throughput Increase</div>
                 </div>
                 <div class="modal-stat">
-                    <div class="modal-stat-value">&lt;70ms</div>
-                    <div class="modal-stat-label">Latency</div>
+                    <div class="modal-stat-value">50-70ms</div>
+                    <div class="modal-stat-label">Latency Ceiling</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">13</div>
+                    <div class="modal-stat-label">Target Classes</div>
                 </div>
             </div>
 
             <div class="modal-section">
                 <h3>The Challenge</h3>
-                <p>The program needed a production-ready ML inference platform to support 18 concurrent camera streams for real-time object detection and tracking. The existing Python prototype had failed—it couldn't handle the throughput requirements and model accuracy was stuck at 30%, making it unusable for operational evaluations.</p>
-                <p>The platform needed to process 18 streams at 40 FPS with sub-70ms latency while maintaining acceptable detection accuracy. Without this capability, third-party model evaluations and downstream simulation programs couldn't proceed.</p>
+                <p>The program received an initial computer vision prototype from Army Research Laboratories, but it was unusable—outdated model, unmaintained code, zero documentation. The team needed to build from ground up: a production-ready ML inference platform supporting 18 concurrent camera streams with 30-40 FPS processing, sub-70ms latency, and 75%+ detection accuracy across 13 target classes. The platform needed to scale from 3 streams (early prototype) to 18 streams while serving as foundation for third-party model evaluations.</p>
+                <p>Midway through development, a critical scope reset: After 6 months of RGB-focused development, the customer revealed Infrared (IR) capability was actually essential ("Soldiers will reach for that immediately"). With 2 months until major evaluation event, the team had to pivot architecture to support both RGB and IR streams while simultaneously fixing the ML model's target ranking system for real-world applications. This was a hard lesson in proactive customer communication.</p>
             </div>
 
             <div class="modal-section">
                 <h3>My Role & Approach</h3>
-                <p>I owned the end-to-end platform transformation, from technical roadmap definition through production deployment. This included defining performance gates, coordinating engineering teams, and making critical technical decisions about architecture migration and optimization strategies.</p>
-                <p>Key responsibilities included:</p>
+                <p>I served as program owner with final decision authority over architecture (Python→C++ migration, client-server design) and explicit accountability for delivery outcomes (schedule, performance readiness). After securing project charter and cross-functional team approval, I owned the platform from model selection through MVP delivery and continue to own roadmap, scaling, and third-party integration strategy.</p>
+                <p>Key responsibilities and decisions included:</p>
                 <ul>
-                    <li>Defining delivery gates: 40 FPS processing speed, <70ms latency, 75%+ detection accuracy across all camera streams</li>
-                    <li>Driving Python→C++ migration decision and coordinating implementation with engineering team</li>
-                    <li>Leading FP32→FP16 optimization effort to improve throughput while maintaining accuracy</li>
-                    <li>Establishing platform as core dependency for all third-party model evaluations</li>
+                    <li>Defining hard go/no-go performance gates: 30-40 FPS, 50-70ms latency ceiling, 75%+ accuracy (high false detection rates led to user frustration—early versions constantly detected tree branches and shadows as drones, making system unusable)</li>
+                    <li>Leading model selection: Evaluated YOLO small/medium/large variants, selected medium for optimal latency/accuracy tradeoff. Rejected ARL prototype and built from scratch</li>
+                    <li>Making final call on Python→C++ migration to meet real-time requirements, then driving client-server refactor to distribute GPU load across dual RTX 4090 systems via 100 Gigabit Ethernet</li>
+                    <li>Approving FP32→FP16 optimization that reduced memory footprint and bandwidth without compromising accuracy</li>
+                    <li>Navigating mid-project scope crisis: Resetting expectations with program leadership after discovering IR requirement 6 months into development, then delivering both RGB + IR support in 2-month sprint</li>
+                    <li>Managing primary stakeholders (DCS/government leadership, external industry partners) and establishing platform as dependency for all software integration efforts</li>
                 </ul>
             </div>
 
@@ -1238,16 +1329,16 @@
                 <h3>Technical Solution</h3>
                 <div class="modal-highlights">
                     <div class="highlight-box">
-                        <h4>Python→C++ Migration</h4>
-                        <p>Drove complete platform rewrite from Python to C++ to meet real-time performance requirements. Improved model accuracy from 30% to 75% and doubled throughput for 18-stream processing.</p>
+                        <h4>Client-Server Architecture Refactor</h4>
+                        <p>Replaced single-executable design (which overloaded GPU) with distributed client-server model: clients extract frames, servers perform inference across dual RTX 4090 GPUs per system via 100 Gigabit Ethernet. Enabled scale from 3 streams → 18 streams with ~2× throughput improvement.</p>
                     </div>
                     <div class="highlight-box">
-                        <h4>Multi-GPU Architecture</h4>
-                        <p>Implemented client-server architecture with multi-GPU support, enabling concurrent processing of 18 camera streams at 40 FPS with <70ms latency.</p>
+                        <h4>Multi-Camera Tracking Algorithm</h4>
+                        <p>Evolved from independent per-camera tracking (objects moving between cameras treated as new detections) to stitched ultrawide FOV approach, treating all detections as single panoramic image. Solved cross-camera object persistence problem.</p>
                     </div>
                     <div class="highlight-box">
-                        <h4>YOLO Integration</h4>
-                        <p>Integrated YOLO object detection models with custom tracking algorithms, optimizing for real-time performance while maintaining detection accuracy requirements.</p>
+                        <h4>FP32→FP16 Model Optimization</h4>
+                        <p>Converted YOLO medium model computations from 32-bit to 16-bit floating point precision, significantly reducing memory footprint and bandwidth requirements without compromising accuracy. Critical for multi-stream GPU efficiency.</p>
                     </div>
                 </div>
             </div>
@@ -1255,12 +1346,13 @@
             <div class="modal-section">
                 <h3>Results & Impact</h3>
                 <ul>
-                    <li>Successfully scaled platform from failed prototype to production MVP supporting 18 concurrent camera streams at 40 FPS</li>
-                    <li>Improved model detection accuracy from 30% to 75%, making platform operationally viable for the first time</li>
-                    <li>Doubled throughput through Python→C++ migration and FP32→FP16 optimization</li>
-                    <li>Achieved <70ms latency requirement, enabling real-time object detection and tracking</li>
-                    <li>Platform now serves as core dependency for all third-party model evaluations</li>
-                    <li>Enabled downstream simulation programs that were previously blocked by platform limitations</li>
+                    <li>Successfully delivered MVP supporting 18 concurrent camera streams (6× scale from initial 3-stream prototype) at 30-40 FPS with 50-70ms latency</li>
+                    <li>Achieved ~2× throughput improvement through client-server refactor and FP32→FP16 optimization, enabling low-latency, high-volume data streaming across dual-GPU systems</li>
+                    <li>Improved video streaming accuracy from 30% (baseline) to 75%+ across 13 target classes—critical distinction from static image accuracy, demonstrating real-world operational viability</li>
+                    <li>Delivered RGB + IR capability in 2-month sprint after mid-project scope discovery, meeting hard deadline for major evaluation event despite 6 months of RGB-only development</li>
+                    <li>Platform now serves as core dependency for all third-party model evaluations and downstream software integration efforts with external partners</li>
+                    <li>Continue to own roadmap and scaling strategy: Currently leading A/B testing framework for evaluating ruggedized computer vision models from industry partners against baseline architecture</li>
+                    <li>Key learning: Proactive customer communication prevents scaling surprises—now implement continuous stakeholder alignment checkpoints across all platform programs</li>
                 </ul>
             </div>
 
@@ -1268,13 +1360,14 @@
                 <h3>Tech Stack</h3>
                 <div class="tech-stack">
                     <span class="tech-tag">C++</span>
-                    <span class="tech-tag">YOLO</span>
-                    <span class="tech-tag">OpenCV</span>
-                    <span class="tech-tag">Multi-GPU</span>
-                    <span class="tech-tag">Real-Time Inference</span>
                     <span class="tech-tag">Client-Server Architecture</span>
-                    <span class="tech-tag">Object Detection</span>
-                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">YOLO (Medium Model)</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Dual RTX 4090 GPUs</span>
+                    <span class="tech-tag">100 Gigabit Ethernet</span>
+                    <span class="tech-tag">FP16 Optimization</span>
+                    <span class="tech-tag">Real-Time Inference</span>
+                    <span class="tech-tag">Multi-Stream Processing</span>
                 </div>
             </div>
         </div>
@@ -1315,20 +1408,21 @@
 
             <div class="modal-section">
                 <h3>The Challenge</h3>
-                <p>The program needed a voice-based AI assistant to enable hands-free operation in high-workload simulation environments. The platform needed to progress through three distinct phases: speech transcription, voice command execution, and full AI assistant capabilities.</p>
-                <p>The technical challenge was delivering <300ms command latency and 75%+ speech recognition accuracy across 4 concurrent audio streams while managing vendor relationships and making critical build-vs-buy decisions to protect platform integrity.</p>
+                <p>The program needed a mission-critical voice AI assistant to serve as the central hub of a system-of-systems (SoS) architecture for military vehicles. This wasn't a prototype—it required 99.99% uptime in safety-critical environments with formal SLAs defined by government customers. The platform needed to support hands-free operation across 4 concurrent radio channels while progressing through a 6-phase roadmap from basic transcription to full multi-agentic AI assistant capabilities.</p>
+                <p>The technical challenge was achieving <300ms command latency (anything over 500ms felt "unnatural" and degraded user trust) and 75%+ accuracy for military speech across 4 concurrent audio streams. Additionally, I needed to navigate a complex vendor relationship with Army Research Laboratories (ARL) and a private industry partner who ultimately delivered a solution that didn't align with system requirements—risking 6 months of development work and platform integrity.</p>
             </div>
 
             <div class="modal-section">
                 <h3>My Role & Approach</h3>
-                <p>I owned the complete platform roadmap, from initial transcription capabilities through advanced AI assistant features. This included defining delivery gates, managing vendor relationships, and making strategic decisions about technical direction.</p>
-                <p>Key responsibilities included:</p>
+                <p>I served as single-threaded owner with full decision authority over roadmap sequencing, scope changes, and phase progression (transcription → command → assistant). I owned the platform from inception through user acceptance testing (currently Phase 5 of 6), with final accountability for on-time, on-budget delivery in a safety-critical environment where failure would put the entire program at high risk.</p>
+                <p>Key responsibilities and decisions included:</p>
                 <ul>
-                    <li>Defining phase-gated roadmap: transcription → voice commands → AI assistant capabilities</li>
-                    <li>Establishing performance thresholds: <300ms command latency, 75%+ speech accuracy across 4 audio streams</li>
-                    <li>Coordinating engineering implementation across transcription, NLP, and multi-agent AI systems</li>
-                    <li>Conducting technical and delivery assessment of external vendor, ultimately terminating partnership following misalignment to protect platform integrity</li>
-                    <li>Validating platform performance with 21 users under operational conditions</li>
+                    <li>Defining acceptance criteria and evaluation framework: 75%+ accuracy (Word Error Rate for transcription + command execution accuracy), <300ms latency, 99.99% uptime SLA</li>
+                    <li>Establishing 6-phase delivery roadmap with formal milestones for org leadership and 2-week agile sprints for development</li>
+                    <li>Architecting modular open system architecture (MOSA) enabling model swapping and serving as platform service for dependent systems</li>
+                    <li>Resolving 6-month vendor conflict with ARL and private industry partner: After partner delivered model + architecture instead of agreed-upon model integration, I made the call to terminate the contract despite 6 months of invested development time. The integration LOE and risks outweighed potential benefits, and poor communication killed what could have been advanced technology.</li>
+                    <li>Blocking deployment authority: If quality thresholds weren't met, I could halt progression between phases and require architecture rework</li>
+                    <li>Validating platform with 21 users across week-long operational testing (3-hour sessions, 4 concurrent radio channels)</li>
                 </ul>
             </div>
 
@@ -1336,16 +1430,16 @@
                 <h3>Technical Solution</h3>
                 <div class="modal-highlights">
                     <div class="highlight-box">
-                        <h4>Real-Time Speech Processing</h4>
-                        <p>Implemented speech-to-text pipeline supporting 4 concurrent audio streams with <300ms latency requirement, enabling hands-free operation in high-workload environments.</p>
+                        <h4>System-of-Systems Architecture</h4>
+                        <p>Designed AI assistant as central hub of vehicle SoS architecture with all data flowing through it for vehicle subsystem functions. Platform treated as service with formal SLAs (99.99% uptime) that other systems depended on.</p>
                     </div>
                     <div class="highlight-box">
-                        <h4>Voice Command System</h4>
-                        <p>Built NLP-based command recognition system achieving 75%+ accuracy, validated with 21 users executing operational voice commands across simulation scenarios.</p>
+                        <h4>Real-Time Multi-Stream Processing</h4>
+                        <p>Built speech-to-text pipeline processing 4 concurrent radio channels with 1-3 second transcription latency and <300ms command execution. Achieved 75%+ accuracy for military speech (Word Error Rate + command execution).</p>
                     </div>
                     <div class="highlight-box">
-                        <h4>Multi-Agent AI Architecture</h4>
-                        <p>Designed multi-phase platform architecture supporting progression from basic transcription to full AI assistant capabilities with extensible command framework.</p>
+                        <h4>Modular Open Architecture (MOSA)</h4>
+                        <p>Implemented MOSA-compliant architecture enabling model swapping and future upgrades. Evolved into multi-agentic workflow with each agent representing vehicle subsystem. Now serves as reference architecture for next-generation capabilities.</p>
                     </div>
                 </div>
             </div>
@@ -1353,12 +1447,13 @@
             <div class="modal-section">
                 <h3>Results & Impact</h3>
                 <ul>
-                    <li>Successfully delivered voice transcription and command phases, establishing foundation for AI assistant capabilities</li>
-                    <li>Achieved <300ms command latency and 75%+ speech accuracy requirements across 4 concurrent audio streams</li>
-                    <li>Validated platform with 21 users under operational conditions, demonstrating hands-free command execution</li>
-                    <li>Protected platform integrity by terminating misaligned vendor partnership following technical and delivery assessment</li>
-                    <li>Platform now progressing through multi-phase roadmap toward full AI assistant capabilities</li>
-                    <li>Established repeatable framework for voice-based AI features in simulation environments</li>
+                    <li>Successfully progressed platform through Phase 5 of 6 (User Acceptance Testing), achieving all formal SLA requirements with 21 users over week-long operational validation</li>
+                    <li>Met critical performance gates: <300ms command latency, 75%+ military speech accuracy (transcription + command execution), 99.99% uptime in safety-critical environment</li>
+                    <li>Made decisive vendor termination call that saved program integrity: After 6 months of development, terminated misaligned industry partner when delivered solution (model + architecture) didn't match requirements (model integration only), despite ARL pressure to continue</li>
+                    <li>Platform now on funded roadmap beyond initial project and mandated for reuse as reference architecture for next-generation AI assistant capabilities</li>
+                    <li>Currently working with industry partners to define expanded multi-agentic workflows, with architecture serving as baseline for future development efforts</li>
+                    <li>Established platform as mission-critical service at center of vehicle SoS architecture, with other subsystems depending on it for core functionality</li>
+                    <li>Key learning: Advanced technology doesn't kill projects, but poor communication has a 100% failure rate—applied this lesson to strengthen vendor alignment processes across all subsequent platforms</li>
                 </ul>
             </div>
 
@@ -1366,13 +1461,13 @@
                 <h3>Tech Stack</h3>
                 <div class="tech-stack">
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Speech-to-Text</span>
+                    <span class="tech-tag">Speech-to-Text (Whisper)</span>
                     <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">Real-Time Audio</span>
                     <span class="tech-tag">Multi-Agent AI</span>
-                    <span class="tech-tag">Voice Commands</span>
-                    <span class="tech-tag">AI Assistant</span>
-                    <span class="tech-tag">Low-Latency Systems</span>
+                    <span class="tech-tag">System-of-Systems (SoS)</span>
+                    <span class="tech-tag">MOSA Architecture</span>
+                    <span class="tech-tag">Real-Time Audio (4 Streams)</span>
+                    <span class="tech-tag">Mission-Critical Systems</span>
                 </div>
             </div>
         </div>
@@ -1383,46 +1478,59 @@
         <div class="modal-close" onclick="closeModal('modal-workload')">×</div>
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-tag">Signal Processing + ML | Mar 2024 – Present</div>
+                <div class="modal-tag">Program Recovery & Platform Build | Jun 2023 – Present</div>
                 <h2 class="modal-title">Workload Analytics Platform</h2>
-                <p class="modal-subtitle">Built real-time physiological monitoring platform from raw biosignals to ML inference, enabling 4 active research partnerships and objective technology evaluation framework.</p>
+                <p class="modal-subtitle">Diagnosed and recovered failing workload program: terminated 5-year subcontractors doing Excel analysis, rejected vendor's $1M IP demand, pivoted entire program from cardiac to neural-based (Neurable), transforming 5 years of sunk cost into spotlight capability with real-time workload analytics.</p>
             </div>
 
             <div class="modal-stats">
                 <div class="modal-stat">
-                    <div class="modal-stat-value">Real-Time</div>
-                    <div class="modal-stat-label">ML Inference</div>
+                    <div class="modal-stat-value">5 Years</div>
+                    <div class="modal-stat-label">Failing Subcontracts Ended</div>
                 </div>
                 <div class="modal-stat">
-                    <div class="modal-stat-value">4</div>
-                    <div class="modal-stat-label">Evaluation Events</div>
+                    <div class="modal-stat-value">$1M</div>
+                    <div class="modal-stat-label">Vendor Demand Rejected</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">Cardiac→Neural</div>
+                    <div class="modal-stat-label">Strategic Pivot</div>
                 </div>
                 <div class="modal-stat">
                     <div class="modal-stat-value">4</div>
                     <div class="modal-stat-label">Active CRADAs</div>
                 </div>
-                <div class="modal-stat">
-                    <div class="modal-stat-value">Python→C#</div>
-                    <div class="modal-stat-label">Production Migration</div>
-                </div>
             </div>
 
             <div class="modal-section">
                 <h3>The Challenge</h3>
-                <p>The program needed a production-ready platform for real-time physiological monitoring and workload assessment using ECG and other biosignals. Existing commercial solutions were unreliable and couldn't meet real-time ML inference requirements for operational environments.</p>
-                <p>The platform needed to process raw biosignals, perform custom signal processing, and deliver real-time ML inference while supporting multiple research partnerships and technology evaluations.</p>
+                <p>When I joined DCS in March 2023, the workload measurement program was in crisis. Two subcontractors—Texas A&M and The Parsette—had been on contract for 5 years collecting cardiac data with Zephyr Bioharness devices, but no quantitative workload metrics were being produced. This was expensive failure: C0, C1, and C2 experiments all had unusable data (less than 50% analyzable), wasted device purchases, and inability to assess technology impact on crew performance—the core mission. I was hired specifically to diagnose where things were going wrong.</p>
+                <p>Within three months (by June 2023), I discovered the root cause: Neither subcontractor knew how to work with time-series data or physiological signals. They were attempting workload analysis in Excel spreadsheets with no background in advanced analytics. Meanwhile, the Bioharness hardware was catastrophically unreliable: Bluetooth dropouts prevented Kafka streaming, device status was invisible under clothing, no way to label participants or time-sync with mission events, and data couldn't be cleaned to separate mission events from breaks or technical failures. The combination of incompetent analysis and failing hardware meant 5 years of sunk cost with zero deliverable metrics.</p>
             </div>
 
             <div class="modal-section">
                 <h3>My Role & Approach</h3>
-                <p>I owned the platform build from raw signal acquisition through real-time ML inference, including signal processing algorithm development, production architecture, and partnership coordination.</p>
-                <p>Key responsibilities included:</p>
+                <p>I was hired in March 2023 specifically to diagnose the failing workload program. Within 3 months (by June 2023), while still a Systems Engineer, I identified the root cause and made three critical decisions that transformed the program:</p>
+                
+                <p><strong>Decision 1: Terminated 5-year subcontractors (June-October 2023, as Systems Engineer)</strong></p>
+                <p>Discovered in June 2023 that Texas A&M and The Parsette—on contract for 5 years—knew nothing about time-series data or physiological signals. They were attempting workload analysis in Excel spreadsheets. I built cardiac analysis and preprocessing pipelines (ETL) from scratch in Python, demonstrating what they failed to deliver in 5 years. Both contracts terminated in October 2023. This accomplishment, along with SIL launch success, led to my promotion to Technical Program Manager in February 2024. Management directed me to hire and train a data scientist (Sumit Shrestha) to replace external personnel—change management that established internal workload analytics capability.</p>
+                
+                <p><strong>Decision 2: Rejected D-Prime's $1M demand after IP dispute (April-Mid 2024, as TPM)</strong></p>
+                <p>ARL recommended D-Prime, a contractor with a feedforward neural network converting raw ECG to workload scores. We built the architecture around their model (Python→C++ for real-time processing, reverse-engineered model for platform compatibility). D-Prime then accused us of IP theft despite government ownership, demanding $1M for continued access. Meanwhile, Bioharness hardware continued failing. I evaluated this situation and recommended rejection.</p>
+                
+                <p><strong>Decision 3: Pivoted entire program from cardiac to neural-based workload (Mid-Late 2024, as TPM)</strong></p>
+                <p>Leveraging my neuroscience background, I evaluated Neurable (D-Prime competitor)—met founders at ARL, reviewed technology, assessed integration feasibility. After determining Neurable exceeded expectations and provided all-in-one hardware/software solution, I met with high-level leadership and made the recommendation: Reject D-Prime's $1M demand, abandon failing Bioharness hardware, pivot from cardiac-based to neural-based workload measurement. Leadership approved. This single decision solved the hardware problem, aligned program with industry, and established COAT SIL as offering real-time, time-synced workload analysis—critical capability for data-informed design in safety-critical environments.</p>
+                
+                <p>Key responsibilities across this transformation (June 2023 - Present):</p>
                 <ul>
-                    <li>Defining platform architecture: raw biosignal processing → feature extraction → real-time ML inference</li>
-                    <li>Replacing unreliable commercial solutions with custom signal processing algorithms</li>
-                    <li>Driving Python→C# migration for production deployment in real-time environments</li>
-                    <li>Coordinating 4 active research partnerships (CRADAs) requiring platform integration</li>
-                    <li>Establishing objective technology evaluation framework using platform outputs</li>
+                    <li>Root cause diagnosis of 5-year subcontractor failure through code review, personnel interviews, and technical analysis (June 2023)</li>
+                    <li>Built complete cardiac preprocessing pipeline from scratch (ETL: raw ECG → filtering → R-peak extraction → HRV computation → baseline normalization) proving internal capability (June-October 2023)</li>
+                    <li>Led hiring and training of replacement data scientist (Sumit Shrestha: 3-month intensive, now independent contributor) (Feb 2024)</li>
+                    <li>Architected solution around D-Prime model (Python→C++ migration for real-time processing) (April 2024)</li>
+                    <li>Reverse-engineered incompatible model for platform integration (April 2024)</li>
+                    <li>Conducted technical evaluation of Neurable technology and integration feasibility (Mid 2024)</li>
+                    <li>Made strategic recommendation to leadership: reject $1M demand, pivot to neural-based approach (Mid-Late 2024)</li>
+                    <li>Led Neurable integration into COAT SIL architecture for real-time, time-synced workload analysis (Late 2024-Present)</li>
                 </ul>
             </div>
 
@@ -1447,12 +1555,16 @@
             <div class="modal-section">
                 <h3>Results & Impact</h3>
                 <ul>
-                    <li>Successfully built platform from raw biosignals to real-time ML inference, replacing unreliable commercial solutions</li>
-                    <li>Enabled 4 active research partnerships (CRADAs) requiring physiological monitoring capabilities</li>
-                    <li>Platform supported 4 major evaluation events, demonstrating operational viability</li>
-                    <li>Migrated Python→C# for production deployment, meeting real-time requirements in operational environments</li>
-                    <li>Established objective technology evaluation framework using platform-generated workload metrics</li>
-                    <li>Platform now serves as foundation for all physiological monitoring and workload assessment programs</li>
+                    <li><strong>Diagnosed failure in 3 months as Systems Engineer:</strong> Hired March 2023 specifically to find problems. By June 2023, identified that Texas A&M and The Parsette—on contract for 5 years—were doing Excel-based "analysis" with zero workload metrics produced. Built replacement cardiac ETL pipelines proving internal capability could replace 5 years of failed external work.</li>
+                    <li><strong>Terminated failing 5-year subcontracts by October 2023:</strong> Both contracts not renewed. This accomplishment, combined with SIL launch success, led to promotion to Technical Program Manager in February 2024.</li>
+                    <li><strong>Established internal workload analytics capability:</strong> Hired and trained data scientist (Sumit Shrestha, February 2024) as permanent replacement for external personnel, eliminating ongoing subcontractor dependency and building institutional knowledge.</li>
+                    <li><strong>Rejected $1M vendor demand following IP dispute (Mid 2024):</strong> After D-Prime accused us of IP theft (despite government ownership) and demanded $1M for continued model access, I evaluated alternatives and recommended rejection to leadership—approved.</li>
+                    <li><strong>Executed strategic pivot from cardiac to neural-based workload (Late 2024):</strong> Led technical evaluation of Neurable (SBIR-funded BCI company), assessed integration feasibility, and recommended pivot to leadership. Decision simultaneously solved failing Bioharness hardware problem and aligned program with cutting-edge industry technology.</li>
+                    <li><strong>Transformed program from 5-year failure to spotlight capability:</strong> COAT SIL now offers real-time, time-synced workload analysis through Neurable integration—capability that attracted attention from DCS community, academic partners (U Michigan, Oakland, Clemson, UCF), and industry (American Rheinmetall). Program went from 5 years of sunk cost with zero metrics to production capability.</li>
+                    <li><strong>Serve as DCS technical lead for 4 active CRADAs:</strong> Define technical scope and collaboration strategy for government-funded partnerships with academia and industry, establishing platform as foundation for cross-organization technology assessment.</li>
+                    <li><strong>Platform enabled objective third-party technology evaluation:</strong> Led to contract proposal with Rheinmetall for objective workload assessment of their developing technologies.</li>
+                    <li><strong>Built complete cardiac preprocessing capability before pivot:</strong> ETL pipeline from raw ECG through HRV computation proved internal technical capability, justified subcontractor termination, and provided fallback if neural-based approach failed.</li>
+                    <li><strong>Platform supported 4 major evaluation events:</strong> Established repeatable methodology and became foundation for all physiological monitoring programs—filling gap left by 5 years of subcontractor failures.</li>
                 </ul>
             </div>
 
