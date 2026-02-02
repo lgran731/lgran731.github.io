@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -249,11 +250,6 @@
             box-shadow: 0 20px 40px rgba(0, 217, 255, 0.1);
         }
 
-        .platform-card:hover .platform-cta {
-            color: var(--color-primary);
-            transform: translateX(4px);
-        }
-
         .platform-header {
             padding: 2rem;
             border-bottom: 1px solid var(--color-border);
@@ -341,6 +337,11 @@
             color: var(--color-text-dim);
             text-align: right;
             transition: all 0.3s;
+        }
+
+        .platform-card:hover .platform-cta {
+            color: var(--color-primary);
+            transform: translateX(4px);
         }
 
         /* About Section */
@@ -803,7 +804,7 @@
             <div class="hero-content">
                 <div class="hero-label">Technical Program Manager • Detroit, MI • Open to Remote/Relocation</div>
                 <h1>Building ML Platforms That Scale</h1>
-                <p>I'm a Technical Program Manager who builds ML and analytics platforms from scratch. Over the past two years, I've led four 0→1 platform deliveries (real-time computer vision, workload analytics, voice AI, and multi-modal data systems), each with cross-functional teams of 10-14 engineers. The technical work matters, but what really makes platforms succeed is earning trust: getting leadership to act on your recommendations when you're new, having teams follow your guidance because you built credibility, and making calls that stick because the technical depth is there. The end result? Turning ambiguous requirements into working systems that people actually use.</p>
+                <p>I'm a Technical Program Manager who builds ML and analytics platforms from scratch. Over the past two years, I've led four 0→1 platform deliveries across real-time computer vision, workload analytics, voice AI, and multi-modal data systems. What makes those efforts succeed isn't just the technical work, but earning trust: leadership acting on your recommendations, teams following your guidance, and decisions that hold because the technical depth is there. The end result? Turning ambiguous requirements into reliable, production-grade systems.</p>
                 
                 <div class="hero-stats">
                     <div class="stat">
@@ -952,8 +953,8 @@
                         <span class="tech-tag">Multi-Agent AI</span>
                         <span class="tech-tag">Python</span>
                     </div>
-                    <div class="platform-cta">View Details →</div>
                 </div>
+                    <div class="platform-cta">View Details →</div>
             </div>
 
             <!-- Platform 4: Workload Analytics -->
@@ -992,8 +993,8 @@
                         <span class="tech-tag">ECG Analysis</span>
                         <span class="tech-tag">Real-Time Systems</span>
                     </div>
-                    <div class="platform-cta">View Details →</div>
                 </div>
+                    <div class="platform-cta">View Details →</div>
             </div>
         </div>
     </section>
@@ -1007,7 +1008,7 @@
 
         <div class="about-content">
             <div class="about-text">
-                <p>I spent six years getting a PhD in cognitive neuroscience, and honestly, I loved it. The questions, the experiments, the iterations. What I didn't expect was how much that mindset would carry over into everything I do now. Software development still feels like science to me. Form a hypothesis, test it, see what breaks, adjust. The setting changed, but the approach didn't.</p>
+                <p>I spent six years getting a PhD in cognitive neuroscience, and honestly, I loved it -- the questions, the experiments, the iterations. What I didn't expect was how much that mindset would carry over into everything I do now. Software development still feels like science to me: form a hypothesis, test it, see what breaks, adjust. The setting changed, but the approach didn't.</p>
                 
                 <p>These days I'm a Technical Program Manager building ML and analytics platforms from scratch. Over the past two years I've led four 0→1 platform builds (real-time ML inference, workload analytics, voice AI, and multi-modal data systems). Each one had a budget around $1M and a cross-functional team of 10-14 engineers. What made them work wasn't just technical chops, it was earning trust early and keeping it.</p>
                 
@@ -1168,7 +1169,7 @@
             <p>I'm open to remote work and willing to relocate. If you're building something interesting and need someone who can translate vague requirements into working systems while earning trust along the way, let's talk.</p>
             
             <div class="contact-links">
-                <a href="mailto:lgran731@gmail.com" class="contact-btn">Email Me</a>
+                <a href="/cdn-cgi/l/email-protection#6f03081d0e01585c5e2f08020e0603410c0002" class="contact-btn">Email Me</a>
                 <a href="https://www.linkedin.com/in/lgrant-phd" target="_blank" class="contact-btn secondary">LinkedIn</a>
                 <a href="Lauren_Grant_Resume.pdf" download class="contact-btn secondary">Download Resume</a>
             </div>
@@ -1283,3 +1284,407 @@
                     <span class="tech-tag">Distributed Systems</span>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: ML Inference Platform -->
+    <div class="modal" id="modal-ml">
+        <div class="modal-close" onclick="closeModal('modal-ml')">×</div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-tag">ML Productization | Mar 2024 – Present</div>
+                <h2 class="modal-title">ML Inference & Tracking Platform</h2>
+                <p class="modal-subtitle">Scaled computer vision platform from failed prototype to production MVP, improving model accuracy from 30% to 75% and doubling throughput for real-time object detection across 18 camera streams.</p>
+            </div>
+
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value">18</div>
+                    <div class="modal-stat-label">Camera Streams (6× Scale)</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">30-40 FPS</div>
+                    <div class="modal-stat-label">Processing Speed</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">75%</div>
+                    <div class="modal-stat-label">Video Detection Accuracy</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">2×</div>
+                    <div class="modal-stat-label">Throughput Increase</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">50-70ms</div>
+                    <div class="modal-stat-label">Latency Ceiling</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">13</div>
+                    <div class="modal-stat-label">Target Classes</div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>The Challenge</h3>
+                <p>We received a computer vision prototype from Army Research Laboratories that wasn't in great shape—outdated model, unmaintained code, documentation that didn't exist. We could have tried to salvage it, but it would have taken longer than starting fresh, so we built a real-time ML inference platform from scratch that could handle 18 concurrent camera streams at 30-40 FPS, keep latency under 70ms, and hit 75%+ accuracy across 13 different target types.</p>
+                <p>Here's where it got interesting. Six months into development, with RGB cameras fully optimized, the customer mentioned almost in passing, "Oh, and we'll need IR capability too. Soldiers will definitely use that." Infrared. Completely different data stream. Two months until our major evaluation event.</p>
+                <p>That one hurt, not because it was technically impossible—we could do it—but because it shouldn't have been a surprise. I should have asked better questions earlier. We delivered RGB + IR in that two-month window, but it taught me something I haven't forgotten. Proactive customer communication isn't optional. You have to check in constantly, surface assumptions early, and not wait for them to remember the critical requirement they forgot to mention.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Role & Approach</h3>
+                <p>I owned this platform end-to-end—model selection, architecture decisions, delivery schedule. If we missed performance targets or the timeline slipped, that was on me. After getting the project charter approved and assembling the cross-functional team, I ran it from initial prototype through production MVP and still own the roadmap today.</p>
+                <p>First decision was defining what actually constitutes "good enough" for this system. I defined hard gates at 30-40 FPS processing, sub-70ms latency, and 75%+ accuracy, and those weren't arbitrary. Early versions were detecting tree branches and shadows as drones constantly, which made soldiers want to turn the system off. If the false positive rate is high enough that users don't trust it, the accuracy number doesn't matter—it's unusable.</p>
+                <p>We evaluated YOLO model variants (small, medium, large) and selected medium for the best balance between speed and accuracy. The Army Research Laboratories prototype was rejected—it would have taken longer to fix than building from scratch.</p>
+                <p>Big architecture call was migrating from Python to C++, because Python wasn't going to meet real-time performance requirements. Then we hit GPU bottlenecks, so I pushed for a client-server refactor to split frame extraction from inference and distribute the load across dual RTX 4090 systems over 100 Gigabit Ethernet. That got us from 3 streams to 18 with about 2× the throughput.</p>
+                <p>The IR situation was a learning moment. Six months in, the customer mentioned needing infrared support with two months to delivery, so I reset expectations with leadership—this is happening, but here's what it costs—and we delivered. Both RGB and IR working in that window. The lesson stuck. I now implement continuous stakeholder alignment checkpoints, because waiting for requirements to surface late is a recipe for disaster.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technical Solution</h3>
+                <div class="modal-highlights">
+                    <div class="highlight-box">
+                        <h4>Client-Server Architecture Refactor</h4>
+                        <p>Replaced single-executable design (which overloaded GPU) with distributed client-server model: clients extract frames, servers perform inference across dual RTX 4090 GPUs per system via 100 Gigabit Ethernet. Enabled scale from 3 streams → 18 streams with ~2× throughput improvement.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Multi-Camera Tracking Algorithm</h4>
+                        <p>Evolved from independent per-camera tracking (objects moving between cameras treated as new detections) to stitched ultrawide FOV approach, treating all detections as single panoramic image. Solved cross-camera object persistence problem.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>FP32→FP16 Model Optimization</h4>
+                        <p>Converted YOLO medium model computations from 32-bit to 16-bit floating point precision, significantly reducing memory footprint and bandwidth requirements without compromising accuracy. Critical for multi-stream GPU efficiency.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>Results & Impact</h3>
+                <ul>
+                    <li>Successfully delivered MVP supporting 18 concurrent camera streams (6× scale from initial 3-stream prototype) at 30-40 FPS with 50-70ms latency</li>
+                    <li>Achieved ~2× throughput improvement through client-server refactor and FP32→FP16 optimization, enabling low-latency, high-volume data streaming across dual-GPU systems</li>
+                    <li>Improved video streaming accuracy from 30% (baseline) to 75%+ across 13 target classes—critical distinction from static image accuracy, demonstrating real-world operational viability</li>
+                    <li>Delivered RGB + IR capability in 2-month sprint after mid-project scope discovery, meeting hard deadline for major evaluation event despite 6 months of RGB-only development</li>
+                    <li>Platform now serves as core dependency for all third-party model evaluations and downstream software integration efforts with external partners</li>
+                    <li>Continue to own roadmap and scaling strategy: Currently leading A/B testing framework for evaluating ruggedized computer vision models from industry partners against baseline architecture</li>
+                    <li>Key learning: Proactive customer communication prevents scaling surprises—now implement continuous stakeholder alignment checkpoints across all platform programs</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Client-Server Architecture</span>
+                    <span class="tech-tag">YOLO (Medium Model)</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Dual RTX 4090 GPUs</span>
+                    <span class="tech-tag">100 Gigabit Ethernet</span>
+                    <span class="tech-tag">FP16 Optimization</span>
+                    <span class="tech-tag">Real-Time Inference</span>
+                    <span class="tech-tag">Multi-Stream Processing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Voice AI Assistant Platform -->
+    <div class="modal" id="modal-voice">
+        <div class="modal-close" onclick="closeModal('modal-voice')">×</div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-tag">AI Product | Jun 2024 – Present</div>
+                <h2 class="modal-title">Voice-Based AI Assistant Platform</h2>
+                <p class="modal-subtitle">Owned platform roadmap across transcription, command, and assistant phases, establishing <300ms latency and 75%+ accuracy delivery gates validated with 21 users.</p>
+            </div>
+
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value">&lt;300ms</div>
+                    <div class="modal-stat-label">Command Latency</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">75%+</div>
+                    <div class="modal-stat-label">Speech Accuracy</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">21</div>
+                    <div class="modal-stat-label">Users Validated</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">4</div>
+                    <div class="modal-stat-label">Concurrent Audio Streams</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">3</div>
+                    <div class="modal-stat-label">Platform Phases</div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>The Challenge</h3>
+                <p>Build a voice AI assistant for military vehicles that soldiers would actually trust. Not a demo, not a prototype—a production system with 99.99% uptime requirements and formal SLAs, because when you're operating hands-free across four concurrent radio channels in a safety-critical environment, "mostly working" isn't good enough.</p>
+                <p>The technical bar was high: sub-300ms command latency (anything over 500ms feels sluggish and breaks user trust), 75%+ accuracy for military-specific speech, handling four audio streams simultaneously. But honestly? The harder part was navigating a vendor relationship that went sideways.</p>
+                <p>We partnered with an industry contractor through Army Research Laboratories. Six months in, they delivered something we didn't ask for—a complete model plus architecture instead of just model integration, which is what we'd agreed on. Integrating their approach would've taken more time and introduced more risk than starting over. I had to make the call: walk away from six months of work with this partner. It wasn't easy. But here's what I learned: advanced technology doesn't kill projects. Poor communication has a 100% failure rate.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Role & Approach</h3>
+                <p>I owned this platform from concept through user acceptance testing—currently in Phase 5 of a 6-phase roadmap—with final call on roadmap sequencing, scope changes, and whether we move from one phase to the next. If quality thresholds weren't met, I could block deployment and send it back for rework, and if we blew the schedule or budget in a safety-critical system, that was on me.</p>
+                <p>First thing I did was define what "good enough" actually means: 75%+ accuracy (measured by word error rate and command execution), sub-300ms latency, and 99.99% uptime. Those became the gates between phases—you don't move forward unless you hit them.</p>
+                <p>I set up a 6-phase roadmap—transcription, then command execution, then full AI assistant—with formal milestones for leadership and 2-week sprints underneath for the team. Built the architecture to be modular so we could swap models in and out as better ones became available, because this needed to be a platform service that other systems depend on, not a standalone tool.</p>
+                <p>Then came the vendor decision. Six months into a partnership with an industry contractor, they delivered something that didn't match what we'd agreed on—we'd asked for model integration (just plug their model into our architecture), but they gave us model + architecture. Integrating it would've taken longer than rebuilding from scratch and introduced risks we didn't want, so I recommended terminating the contract. Leadership agreed, despite the sunk time and despite pressure from Army Research Laboratories to make it work.</p>
+                <p>That one taught me something: you can have great technology and still fail if communication breaks down. Now I frontload alignment conversations, define deliverables in detail, check in constantly, and surface mismatches early rather than six months in.</p>
+                <p>We validated the platform with 21 users over a week—3-hour sessions, 4 concurrent radio channels, real operational conditions—and it worked. Currently the platform is on a funded roadmap, mandated for reuse, and serving as the reference architecture for next-generation capabilities.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technical Solution</h3>
+                <div class="modal-highlights">
+                    <div class="highlight-box">
+                        <h4>System-of-Systems Architecture</h4>
+                        <p>Designed AI assistant as central hub of vehicle SoS architecture with all data flowing through it for vehicle subsystem functions. Platform treated as service with formal SLAs (99.99% uptime) that other systems depended on.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Real-Time Multi-Stream Processing</h4>
+                        <p>Built speech-to-text pipeline processing 4 concurrent radio channels with 1-3 second transcription latency and <300ms command execution. Achieved 75%+ accuracy for military speech (Word Error Rate + command execution).</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Modular Architecture</h4>
+                        <p>Implemented modular architecture enabling model swapping and future upgrades. Evolved into multi-agentic workflow with each agent representing vehicle subsystem. Now serves as reference architecture for next-generation capabilities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>Results & Impact</h3>
+                <ul>
+                    <li>Successfully progressed platform through Phase 5 of 6 (User Acceptance Testing), achieving all formal SLA requirements with 21 users over week-long operational validation</li>
+                    <li>Met critical performance gates: <300ms command latency, 75%+ military speech accuracy (transcription + command execution), 99.99% uptime in safety-critical environment</li>
+                    <li>Made decisive vendor termination call that saved program integrity: After 6 months of development, terminated misaligned industry partner when delivered solution (model + architecture) didn't match requirements (model integration only), despite ARL pressure to continue</li>
+                    <li>Platform now on funded roadmap beyond initial project and mandated for reuse as reference architecture for next-generation AI assistant capabilities</li>
+                    <li>Currently working with industry partners to define expanded multi-agentic workflows, with architecture serving as baseline for future development efforts</li>
+                    <li>Established platform as mission-critical service at center of vehicle SoS architecture, with other subsystems depending on it for core functionality</li>
+                    <li>Key learning: Advanced technology doesn't kill projects, but poor communication has a 100% failure rate—applied this lesson to strengthen vendor alignment processes across all subsequent platforms</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Speech-to-Text (Whisper)</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Multi-Agent AI</span>
+                    <span class="tech-tag">System-of-Systems (SoS)</span>
+                    <span class="tech-tag">Modular Architecture</span>
+                    <span class="tech-tag">Real-Time Audio (4 Streams)</span>
+                    <span class="tech-tag">Mission-Critical Systems</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Workload Analytics Platform -->
+    <div class="modal" id="modal-workload">
+        <div class="modal-close" onclick="closeModal('modal-workload')">×</div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-tag">Program Recovery & Platform Build | Jun 2023 – Present</div>
+                <h2 class="modal-title">Workload Analytics Platform</h2>
+                <p class="modal-subtitle">Diagnosed struggling workload program, recommended transitioning from external partners to internal capability, navigated vendor IP dispute with $1M demand, and led evaluation that resulted in strategic pivot from cardiac to neural-based measurement—transforming years of investment into operational capability with real-time workload analytics.</p>
+            </div>
+
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value">5 Years</div>
+                    <div class="modal-stat-label">External Contracts Ended</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">$1M</div>
+                    <div class="modal-stat-label">Vendor Demand Rejected</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">Cardiac→Neural</div>
+                    <div class="modal-stat-label">Strategic Pivot</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">4</div>
+                    <div class="modal-stat-label">Research Partnerships</div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>The Challenge</h3>
+                <p>When I joined in March 2023, the workload measurement program was struggling. External partners had been working on this for 5 years, collecting cardiac data with commercial biometric devices, but no quantitative workload metrics were making it through to inform design decisions. The result was a significant investment with limited return: multiple evaluation cycles producing data that couldn't be analyzed effectively, hardware reliability issues preventing consistent collection, and no clear path to the objective performance metrics the program needed.</p>
+                <p>I was brought in to figure out what was going wrong. Within three months of joining—still fairly new to the organization—I dug into the code, talked to stakeholders across teams, and worked to understand the technical gaps. What I found was that the challenge wasn't just one thing: the analytical approaches being used weren't well-suited to time-series physiological data, and the commercial hardware had fundamental reliability issues with connectivity, event synchronization, and data quality that made downstream analysis nearly impossible.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Role & Approach</h3>
+                <p>I was brought in to diagnose what wasn't working and recommend a path forward. What made this challenging—and ultimately rewarding—was that leadership trusted my technical assessment even though I was relatively new to the organization. They didn't take these decisions lightly, but they valued my perspective as a subject matter expert and acted on my recommendations. That trust shaped how this work unfolded.</p>
+                
+                <p><strong>Recommendation 1: Transition to Internal Capability (June-October 2023)</strong></p>
+                <p>By June 2023, I'd identified that the external partnerships weren't working—not for lack of effort, but because the analytical requirements didn't align well with their expertise. I built cardiac preprocessing pipelines from scratch to demonstrate what internal capability could look like, then recommended transitioning those contracts and building expertise in-house instead. Leadership agreed. By October 2023, both partnerships had concluded, and I was asked to hire and train an internal data scientist to establish this as a permanent capability. This work, combined with my concurrent role in launching the systems integration laboratory, led to my promotion to Technical Program Manager in February 2024.</p>
+                
+                <p><strong>Recommendation 2: Walk Away from Vendor's $1M Demand (April-Mid 2024)</strong></p>
+                <p>We'd partnered with a vendor who provided a neural network model for converting raw ECG signals to workload scores. My team built the complete architecture around it—real-time processing, platform integration, the full stack. Then the vendor raised IP concerns and asked for $1M to continue. Meanwhile, the hardware side still wasn't reliable. I evaluated what we'd built, what alternatives existed, and whether the investment made sense. My recommendation: walk away. Leadership trusted that assessment, and we moved on.</p>
+                
+                <p><strong>Recommendation 3: Pivot to Neural-Based Measurement (Mid-Late 2024)</strong></p>
+                <p>With my neuroscience background, I was asked to evaluate an alternative approach using brain-computer interface technology. I met with the technology provider, reviewed their capabilities, and assessed how it would integrate with our existing architecture. The solution was compelling—it addressed the hardware reliability issues we'd been fighting and represented where the field was heading. I recommended pivoting the entire program from cardiac-based to neural-based measurement. Leadership approved. That decision aligned us with industry-leading technology and gave us the real-time, synchronized workload analysis capability we'd been working toward.</p>
+                
+                <p>What I contributed across this work:</p>
+                <ul>
+                    <li>Technical diagnosis through code review, stakeholder conversations, and hands-on analysis to understand root causes</li>
+                    <li>Built proof-of-concept preprocessing pipelines that demonstrated internal capability and informed strategic decisions</li>
+                    <li>Hired and trained internal data scientist, establishing the analytical expertise that replaced external dependencies</li>
+                    <li>Designed and built real-time processing architecture, including reverse-engineering existing models for platform compatibility</li>
+                    <li>Evaluated alternative technologies and assessed integration feasibility to inform strategic recommendations</li>
+                    <li>Provided technical guidance to leadership on vendor relationships and technology direction</li>
+                    <li>Led integration of new measurement approach into laboratory architecture for operational use</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technical Solution</h3>
+                <div class="modal-highlights">
+                    <div class="highlight-box">
+                        <h4>Custom Signal Processing</h4>
+                        <p>Developed ECG analysis and biosignal processing algorithms, replacing unreliable commercial solutions with production-ready custom implementations for real-time monitoring.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Real-Time ML Pipeline</h4>
+                        <p>Built end-to-end pipeline from raw biosignals to real-time ML inference, enabling workload assessment and performance monitoring during operational scenarios.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Production Architecture</h4>
+                        <p>Migrated platform from Python research code to C# production system, meeting real-time requirements while maintaining signal processing accuracy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>Results & Impact</h3>
+                <ul>
+                    <li><strong>Turned around a struggling program in months:</strong> Within three months of joining, identified what wasn't working and built proof-of-concept pipelines that demonstrated a path forward. My recommendations led to transitioning external partnerships and establishing internal capability by October 2023.</li>
+                    <li><strong>Built lasting analytical capability:</strong> Hired and trained an internal data scientist who's now a fully independent contributor. What started as a gap-filling hire became a permanent addition to the team's analytical expertise.</li>
+                    <li><strong>Navigated a complex vendor situation:</strong> When a vendor relationship became untenable financially, I evaluated our options and recommended walking away from a $1M demand. Leadership trusted that call, and we found a better path forward.</li>
+                    <li><strong>Led a strategic technology pivot:</strong> Used my neuroscience background to evaluate an alternative measurement approach. The recommendation to pivot from cardiac to neural-based monitoring was significant—it meant changing direction on years of work—but it solved our hardware problems and aligned us with where the field is heading.</li>
+                    <li><strong>Delivered operational capability from years of investment:</strong> The program now has real-time, time-synced workload analysis running in production. That capability has drawn interest from academic partners and industry, and it's become a foundation for how we evaluate new technologies.</li>
+                    <li><strong>Support four active research partnerships:</strong> I define technical scope and collaboration strategy for government-funded partnerships with academic and industry organizations. The platform we built has become the basis for cross-organization technology assessment.</li>
+                    <li><strong>Enabled new evaluation approaches:</strong> The workload platform opened doors to partnership opportunities we didn't have before—objective assessment of emerging technologies that need this kind of measurement capability.</li>
+                    <li><strong>Created technical de-risking path:</strong> Built the cardiac preprocessing pipeline as a fallback before committing to the neural pivot. That work proved our internal capability and gave leadership confidence in the recommendation.</li>
+                    <li><strong>Established repeatable methodology:</strong> Platform has supported four major evaluation events and become the foundation for physiological monitoring across programs. What was a capability gap is now a core strength.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Signal Processing</span>
+                    <span class="tech-tag">ECG Analysis</span>
+                    <span class="tech-tag">ML Inference</span>
+                    <span class="tech-tag">Real-Time Systems</span>
+                    <span class="tech-tag">Biosignal Processing</span>
+                    <span class="tech-tag">Workload Assessment</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2-4: ML, Voice, Workload (content truncated for brevity - full modals follow same pattern) -->
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Modal functionality
+        function openModal(modalId) {
+            console.log('Opening modal:', modalId);
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.classList.add('modal-open');
+            }
+        }
+
+        function closeModal(modalId) {
+            console.log('Closing modal:', modalId);
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.classList.remove('modal-open');
+            }
+        }
+
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, initializing event listeners');
+            
+            // Add click handlers to platform cards
+            const cards = document.querySelectorAll('.platform-card');
+            console.log('Found', cards.length, 'platform cards');
+            
+            cards.forEach((card) => {
+                const modalId = card.getAttribute('data-modal');
+                console.log('Setting up card with modal:', modalId);
+                
+                card.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Card clicked, opening:', modalId);
+                    openModal(modalId);
+                });
+            });
+
+            // Close modal when clicking outside content
+            document.querySelectorAll('.modal').forEach(modal => {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        closeModal(modal.id);
+                    }
+                });
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.modal.active').forEach(modal => {
+                        closeModal(modal.id);
+                    });
+                }
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe platform cards
+        document.querySelectorAll('.platform-card').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s eas
